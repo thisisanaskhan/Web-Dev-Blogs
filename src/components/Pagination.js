@@ -7,16 +7,24 @@ import { AppContext } from '../context/AppContext'
 
   return (
     <div>
-        <div>
+        <div className='w-full h-[0.1rem] border border-black'>
+
+        </div>
+        <div className='flex justify-between'>
+        <div  >
             {   page >1 &&
-                <button onClick={ ()=>{handlePageChange(page-1)}}>Previous</button>
+                <button className='bg-slate-200 p-1 mr-2 ' onClick={ ()=>{handlePageChange(page-1)}}>Previous</button>
             }
 
             {
                 page<totalPages &&
-                <button onClick={()=>{handlePageChange(page+1)}}>Next</button>
+                <button className='bg-slate-200 p-1'  onClick={()=>{handlePageChange(page+1)}}>Next</button>
             }
+            </div>
+            <div>
             <p>{page}of{handlePageChange}</p>
+            </div>
+            
 
         </div>
 

@@ -14,7 +14,7 @@ function App() {
     fetchBlogs();
   },[])
   return (
-    <div className='w-11/12 mx-auto max-w-[1300px] flex flex-col'>
+    <div className='w-11/12 mx-auto max-w-m flex flex-col text-white'>
  
      <Header/>
      <Blogs/>

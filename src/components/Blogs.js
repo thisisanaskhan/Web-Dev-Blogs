@@ -18,12 +18,12 @@ import Spinner from './Spinner';
                 (posts.map((post)=>(
                     <div className='' key={post.id}>
                         <p className='font-bold'>{post.title}</p>
-                        <p>By<span className='italic'>{post.author}</span>on<span>{post.category}</span></p>
-                        <p>Posted on{post.date}</p>
+                        <p>By <span className='italic'> {post.author} </span>on <span> {post.category}</span></p>
+                        <p>Posted on {post.date}</p>
                         <p>{post.content}</p>
                         <div>
                             {post.tags.map((tag,index)=>{
-                                return <span key={index}>{`#${tag}`}</span>
+                                return <span className='text-blue-500' key={index}>{`#${tag}`}</span>
                             })}
 
                         </div>
